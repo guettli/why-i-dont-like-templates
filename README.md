@@ -32,7 +32,24 @@ and thus copy+paste.
 
 Let's embrace HTML fragments. 
 
+I think many people still have an outdated perspective on HTML. Most people think HTML always starts with a `<html> tag, then a `<head>` tag,
+then a `<body>` tag. If you think like this, then it makes sense that you need some kind of template and template language to create such a construct.
+  
+I think about HTML fragments. I create one HTML fragment with one method written in my prefered backend language. This is easy to develop and easy to test.
+  
+Errors in templates give me a super ugly stacktrace. Each time it is difficult for me to see what the root cause it.
+  
+It is not impossible, but debugging errors in templates is much harder than debugging my favorite backend language.
 
+While writing code and running the tests I often insert `assert 0, value_which_I_want_to_see`. This gives my a nice stacktrace
+and shows me the value which I want to inspect. That's faster than starting the debugger. Is this possible with a template language?
+  
+I don't use tailwind, but many seem to like it, because it helps you to keep things in one place, in one file.
+  
+There is a related article of Carson Gross [Locality of Behaviour](https://htmx.org/essays/locality-of-behaviour/).  
+
+So maybe I am not alone.
+  
 ... to be continued.
 
 
